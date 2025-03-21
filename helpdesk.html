@@ -17,7 +17,24 @@
           <br>
           <p>Check Blackboard for when CWA tutors will be there.</p>
           <form action="http://mercury.swin.edu.au/it000000/formtest.php" method="post">
-
+               <fieldset>
+                    <legend>Student details</legend>
+                    <p>
+                         <label for="student_id">Student ID</label>
+                         <input type="text" name="student_id" id="student_id" pattern="^\d{7,10}$" required>
+                    </p>
+                    <p>
+                         <label for="given_name">Given Name</label>
+                         <input type="text" name="given_name" id="given_name" pattern="^\d{1,15}$" required>
+                         <label for="family_name">Family Name</label>
+                         <input type="text" name="family_name" id="family_name" pattern="^\d{1,15}$" required>
+                    </p>
+               </fieldset>
+               <fieldset>
+                    <legend>Your unit</legend>
+                    
+               </fieldset>
+               
           </form>
      </section>
 </body>
