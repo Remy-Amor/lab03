@@ -12,9 +12,7 @@
      <a href="http://www.swin.edu.au"><img src="logo.png" alt="Swinburne Logo" ></a>
      <section>
           <h1>CWA Help Desk Appointment</h1>
-          <br>
           <p>The Help Desk is located in ATC620. Open 10:30 to 19:00 Monday to Friday</p>
-          <br>
           <p>Check Blackboard for when CWA tutors will be there.</p>
           <form action="http://mercury.swin.edu.au/it000000/formtest.php" method="post">
                <fieldset>
@@ -25,14 +23,33 @@
                     </p>
                     <p>
                          <label for="given_name">Given Name</label>
-                         <input type="text" name="given_name" id="given_name" pattern="^\d{1,15}$" required>
+                         <input type="text" name="given_name" id="given_name" pattern="^[a-z]{1,15}$" required>
                          <label for="family_name">Family Name</label>
-                         <input type="text" name="family_name" id="family_name" pattern="^\d{1,15}$" required>
+                         <input type="text" name="family_name" id="family_name" pattern="^[a-z]{1,15}$" required>
                     </p>
                </fieldset>
                <fieldset>
                     <legend>Your unit</legend>
-                    
+                    <p>
+                         <label for="cos10011">COS10011</label>
+                         <input type="radio" name="unit_no" id="cos10011" required="required" value="cos10011">
+                         <label for="cos60004">COS60004</label>
+                         <input type="radio" name="unit_no" id="cos60004" required="required" value="cos60004">
+                         <label for="cos60007">COS60007</label>
+                         <input type="radio" name="unit_no" id="cos60007" required="required" value="cos60007">
+                    </p>
+                    <p>
+                         <label for="tutor">Your Tutor</label> 
+                         <select name="tutor" id="tutor" required>
+                              <option value="">Please Select</option>
+                              <option value="Jesse Pinkman">Jesse Pinkman</option>
+                              <option value="Walter White">Walter White</option>
+                              <option value="Gustavo Fring">Gustavo Fring</option>
+                         </select>
+                    </p>
+               </fieldset>
+               <fieldset>
+                    <legend>Issue</legend>
                </fieldset>
                
           </form>
